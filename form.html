@@ -1,0 +1,64 @@
+<fieldset>
+	<div class="intro">
+		<div ng-transclude></div>
+		<h1>Got Something <span class="highlight">Upworthy</span>?</h1>
+
+		<p>What’s the best thing you’ve seen all week? Anything that we missed? We’d love to know what you think
+			should be featured on Upworthy.</p>
+
+		<p>Use the form below to submit your favorite stuff to us for consideration. Thanks in advance for your
+			input!</p>
+	</div>
+
+	<div id="errorDialog"></div>
+
+	<form action="" class="submit-link-form" id="submitLinkForm" role="form">
+		<div class="input-wrapper">
+			<label class="title hide">Your email address (required)</label>
+			<input class="form-control form-validate" id="form-email" type="email" name="" value="" aria-label="Email address" required title="email address" placeholder="Your email address (required)" maxlength="40">
+		</div>
+		<div class="input-wrapper">
+			<label class="title hide">Link (required)</label>
+			<input class="form-control form-validate" id="form-url" type="url" name="" value="" aria-label="URL" required placeholder="Link (required)">
+		</div>
+		<div class="input-wrapper source">
+			<label class="title">Where did you first see this content?</label>
+
+			<div class="radio-row">
+				<div class="radio-col">
+
+					<label class="input-radio">
+						<input type="radio" class="radio" name="radio_button" value="Facebook" role="radio" aria-label="Facebook">Facebook
+					</label>
+					<label class="input-radio">
+						<input type="radio" class="radio" name="radio_button" value="Twitter" role="radio" aria-label="Twitter">Twitter
+					</label>
+					<label class="input-radio">
+						<input type="radio" class="radio" name="radio_button" value="YouTube" role="radio" aria-label="YouTube">YouTube
+					</label>
+					<label class="input-radio">
+						<input type="radio" class="radio" name="radio_button" value="Tumblr" role="radio" aria-label="Tumblr">Tumblr</label>
+				</div>
+				<div class="radio-col">
+					<label class="input-radio">
+						<input type="radio" class="radio" name="radio_button" value="Reddit" role="radio" aria-label="Reddit">Reddit
+					</label>
+					<label class="input-radio">
+						<input type="radio" class="radio" name="radio_button" value="I made it myself!" role="radio" aria-label="I made it myself!">I
+						made
+						it
+						myself!
+					</label>
+					<label class="input-radio">
+						<input type="radio" class="radio" name="radio_button" value="Other">Other
+						<input name="" type="text" value="" id="otherSource" />
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="submit-wrapper">
+			<button class="submit" id="submitForm">Submit</button>
+		</div>
+	</form>
+</fieldset>
+
